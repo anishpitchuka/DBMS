@@ -4,128 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Personal Introduction</title>
+    <link rel="stylesheet" href="1A.css">
 </head>
 <body>
-   
-    <header>
-        <h1>Welcome to My Personal Web Page</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Welcome to My World</h1>
+            <p class="subtitle">A passionate web developer and creative problem solver</p>
+        </header>
 
-    <main>
-        
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! My name is <strong>Pitchuka Anish</strong>, and I'm a <em>computer science student</em> passionate about web development and technology. I'm currently learning HTML, CSS, and JavaScript to build amazing web experiences.</p>
-            
-            <p>I believe in the power of technology to solve real-world problems and make life easier for everyone. My goal is to become a <mark>full-stack developer</mark> and contribute to innovative projects.</p>
-
-            
-        </section>
-
-        
-        <section id="education">
-            <h2>My Education</h2>
-            <h3>Current Studies</h3>
-            <ul>
-                <li>Bachelor of Science in Computer Science</li>
-                <li>Web Development </li>
-                <li>Data Structures and Algorithms</li>
-            </ul>
-
-            <h3>Programming Languages I'm Learning</h3>
-            <ol>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Java</li>
-            </ol>
-
-            <h4>Academic Schedule</h4>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Day</th>
-                        <th>Subject</th>
-                        <th>Time</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday</td>
-                        <td>Web Development</td>
-                        <td>9:00 AM - 11:00 AM</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday</td>
-                        <td>Database Systems</td>
-                        <td>1:00 PM - 3:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Friday</td>
-                        <td>Software Engineering</td>
-                        <td>10:00 AM - 12:00 PM</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="hobbies">
-            <h2>My Hobbies & Interests</h2>
-            
-            <h3>Technical Interests</h3>
-            <dl>
-                <dt>Web Development</dt>
-                <dd>Creating responsive and interactive websites using modern technologies</dd>
+        <!-- Main Content Grid -->
+        <div class="main-content">
+            <!-- About Me Section -->
+            <div class="card">
+                <h2>About Me</h2>
+                <img src="images/profile.jpg"
+                     alt="Profile Picture" class="profile-img">
+                <p>Hello! I'm <strong>Anish</strong>, a dedicated web developer with a passion for creating 
+                   <em>beautiful</em> and <span class="highlight">functional</span> digital experiences. I have been 
+                   coding for over an year and love exploring new technologies.</p>
+                <br>
+                <p>When I'm not coding, you can find me hiking in the mountains, reading science fiction novels
+                   .</p>
                 
-                <dt>Mobile App Development</dt>
-                <dd>Building cross-platform applications for iOS and Android</dd>
-                
-                <dt>Game Development</dt>
-                <dd>Designing and programming simple games using various engines</dd>
-            </dl>
-
-            <h3>Personal Interests</h3>
-            <p>When I'm not coding, I enjoy:</p>
-            <ul>
-                <li>Reading <abbr title="Science Fiction">Sci-Fi</abbr> novels</li>
-                <li>Playing guitar and composing music</li>
-                <li>Photography, especially landscape and street photography</li>
-                <li>Hiking and exploring nature</li>
-            </ul>
-
-            <details>
-                <summary>Click to see my favorite books</summary>
+                <!-- Nested Lists -->
+                <h3>My Interests:</h3>
                 <ul>
-                    <li>"The Hitchhiker's Guide to the Galaxy" by Douglas Adams</li>
-                    <li>"Neuromancer" by William Gibson</li>
-                    <li>"Foundation" by Isaac Asimov</li>
+                    <li>Technology & Programming
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Mobile Apps</li>
+                            <li>AI & Machine Learning</li>
+                        </ul>
+                    </li>
+                    <li>Outdoor Activities
+                        <ol>
+                            <li>Hiking</li>
+                            <li>Photography</li>
+                            <li>Rock Climbing</li>
+                        </ol>
+                    </li>
                 </ul>
-            </details>
-        </section>
+            </div>
 
-  
-    <footer id="contact">
-        <h2>Contact Information</h2>
-        <address>
-            <p>Email: <a href="blahblah@hotmail.com">blahblah@hotmail.com</a></p>
-            <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+            <!-- Skills Section -->
+            <div class="card">
+                <h2>My Skills</h2>
+                <ul class="skills-list">
+                    <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+)</li>
+                    <li><strong>Backend:</strong> Node.js, Python, PHP</li>
+                    <li><strong>Frameworks:</strong> React, Vue.js, Angular</li>
+                    <li><strong>Database:</strong> MySQL, MongoDB, PostgreSQL</li>
+                    <li><strong>Tools:</strong> Git, Docker, VS Code</li>
+                </ul>
+
+                <!-- Progress Bars for Skills -->
+                <h3>Skill Levels:</h3>
+                <div class="skill-progress">
+                    <label for="html-skill">HTML/CSS</label>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                    
+                    <label for="js-skill">JavaScript</label>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                    
+                    <label for="react-skill">React</label>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Get In Touch</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Choose a subject</option>
+                        <option value="collaboration">Project Collaboration</option>
+                        <option value="job">Job Opportunity</option>
+                        <option value="question">General Question</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="newsletter" value="yes">
+                        Subscribe to my newsletter for updates
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Contact Method:</label>
+                    <label><input type="radio" name="contact_method" value="email" checked> Email</label>
+                    <label><input type="radio" name="contact_method" value="phone"> Phone</label>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h3>Connect With Me</h3>
+            <div class="social-links">
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="mailto:alex@example.com">Email</a>
+            </div>
+            <p>&copy; 2025 Anish Pitchuka. All rights reserved.</p>
             
-        </address>
-        
-        <p><small>&copy; 2025 Pitchuka Anish. All rights reserved.</small></p>
-        
-        <p>
-            <a href="#top">Back to Top</a> | 
-         
-        </p>
-    </footer>
+            <!-- Additional HTML Elements -->
+           
+        </footer>
+    </div>
+
+    
 </body>
 </html>
