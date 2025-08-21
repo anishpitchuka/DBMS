@@ -352,3 +352,33 @@ body {
         text-align: center;
     }
 }
+.form{
+    text-align: left;
+    padding: 10px;
+    margin: 5px;
+}
+.submit{
+    background-color: #3498db;
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+.reset{
+    background-color: #3498db;
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+fieldset{
+    border: 4px solid #333 ;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 30px;
+
+}
+.title{
+    list-style: solid;
+}
+.login{
+    text-align: center;
+}
