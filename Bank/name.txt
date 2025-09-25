@@ -1,0 +1,7 @@
+sarita,patel,CSE,4
+suman,kaushal,DESIGN,3
+amit,pal,CSE,4
+shubham,darr,ME,2
+ramnagar,choubey,CSE,1
+atif,khan,ME,3
+john,martin,DESIGN,2

@@ -1,0 +1,120 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a2e6d;
+    color: white;
+    padding: 10px 30px;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.header h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Navigation */
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+    background: #f39c12;
+    color: #fff;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 26px;
+    color: #0a2e6d;
+    font-weight: bold;
+    border-bottom: 2px solid #e74c3c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* Card Styling */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #0a2e6d;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.card th {
+    background: linear-gradient(to right, #0a2e6d, #1e90ff);
+    color: white;
+    padding: 10px;
+}
+
+.card td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Details Link */
+.details-link {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.details-link:hover {
+    text-decoration: underline;
+}
