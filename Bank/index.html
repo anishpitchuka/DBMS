@@ -3,410 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IndianBank - Your Trusted Banking Partner</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white;
-        }
-
-        .header {
-            background-color: #1a472a;
-            color: white;
-            padding: 20px;
-        }
-
-        .logo-section {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo img {
-            width: 50px;
-            height: 50px;
-            background-color: white;
-            border-radius: 5px;
-        }
-
-        .bank-name {
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .nav-menu {
-            background-color: #2d5f3f;
-            padding: 0;
-        }
-
-        .nav-menu table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .nav-menu td {
-            padding: 15px;
-            text-align: center;
-        }
-
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            display: block;
-        }
-
-        .nav-menu td:hover {
-            background-color: #1a472a;
-        }
-
-        .main-content {
-            display: flex;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .content-left {
-            flex: 3;
-        }
-
-        .content-right {
-            flex: 1;
-        }
-
-        .banner img {
-            width: 100%;
-            height: 200px;
-            background-color: #ddd;
-            object-fit: cover;
-        }
-
-        .bank-info {
-            margin: 20px 0;
-            line-height: 1.6;
-        }
-
-        .bank-info ul {
-            margin-top: 15px;
-            margin-left: 20px;
-        }
-
-        .bank-info li {
-            margin: 8px 0;
-        }
-
-        .form {
-            margin: 30px 0;
-        }
-
-        fieldset {
-            border: 2px solid #2d5f3f;
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-
-        legend {
-            padding: 0 10px;
-            font-weight: bold;
-            color: #1a472a;
-        }
-
-        .title {
-            font-size: 20px;
-        }
-
-        label {
-            display: inline-block;
-            width: 150px;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="password"],
-        textarea {
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            width: calc(100% - 160px);
-        }
-
-        textarea {
-            resize: vertical;
-        }
-
-        button {
-            padding: 10px 30px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .submit {
-            background-color: #2d5f3f;
-            color: white;
-        }
-
-        .submit:hover {
-            background-color: #1a472a;
-        }
-
-        .reset {
-            background-color: #666;
-            color: white;
-        }
-
-        .reset:hover {
-            background-color: #444;
-        }
-
-        .services {
-            margin: 30px 0;
-        }
-
-        .services h2 {
-            color: #1a472a;
-            margin-bottom: 20px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .service-item {
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 5px;
-        }
-
-        .service-image {
-            background-color: #ddd;
-            height: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 10px;
-            color: #666;
-            font-weight: bold;
-        }
-
-        .service-item h3 {
-            color: #1a472a;
-            margin: 10px 0;
-        }
-
-        .news-section {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-        }
-
-        .news-section h3 {
-            color: #1a472a;
-            margin-bottom: 15px;
-        }
-
-        .news-marquee {
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .footer {
-            background-color: #1a472a;
-            color: white;
-            padding: 15px 20px;
-            margin-top: 30px;
-        }
-
-        .footer-date {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .hidden {
-            display: none;
-        }
-    </style>
+    <title>IndianBank – Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <div class="logo-section">
-                <div class="logo">
-                    <img src="images/logo.png" alt="logo">
-                </div>
-                <h1 class="bank-name">IndianBank</h1>
-            </div>
-        </header>
-
-        <!-- Navigation Menu using table structure -->
-        <nav class="nav-menu">
-            <table>
-                <tr>
-                    <td><a href="#home" onclick="showHome(); return false;">Home</a></td>
-                    <td><a href="#login" onclick="showLogin(); return false;">Login</a></td>
-                    <td><a href="dashboard.html">Dashboard</a></td>
-                </tr>
-            </table>
+    <header class="site-header">
+        <div class="brand">
+            <img src="https://via.placeholder.com/48x48?text=IB" alt="IndianBank Logo">
+            <h1>IndianBank</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="dashboard.php">Dashboard</a>
+            <a href="#login">Login</a>
         </nav>
+    </header>
 
-        <!-- Main Content Area -->
-        <main class="main-content">
-            <div class="content-left">
-                <!-- Home Content -->
-                <div id="homeContent">
-                    <!-- Banner Image -->
-                    <div class="banner">
-                        <img src="images/banner.png" alt="banner">
-                    </div>
-
-                    <!-- Bank Information -->
-                    <div class="bank-info">
-                        <p>Welcome to SecureBank, your trusted financial partner for over 50 years. We provide comprehensive banking solutions tailored to meet your personal and business needs. Our commitment to excellence, security, and customer satisfaction makes us the preferred choice for millions of customers worldwide.</p>
-                        
-                        <ul>
-                            <li>24/7 Customer Support</li>
-                            <li>Advanced Security Features</li>
-                            <li>Competitive Interest Rates</li>
-                            <li>Mobile and Online Banking</li>
-                            <li>Multiple Branch Locations</li>
-                        </ul>
-                    </div>
-
-                    <!--Forms-->
-                    <div class="form">
-                        <form action="account.php" method="post">
-                            <fieldset>
-                                <legend class="title">Account Opening</legend><br>
-                                <label for="customername">Customer Name</label>
-                                <input type="text" name="customername" id="customername" required="required"><br><br>
-                                <label for="Address">Address</label>
-                                <textarea name="Address" id="Address" cols="100" rows="5" placeholder="Enter Your Address here..."></textarea><br><br>
-                                <label for="city">City</label>
-                                <input type="text" name="city" id="city"> <br><br>
-                                <button type="submit" class="submit">Submit</button> 
-                                &nbsp;&nbsp;&nbsp;
-                                <button type="reset" class="reset">Reset</button>
-                            </fieldset>
-                            <br><br><br>
-                        </form>
-                    </div>
-
-                    <!-- Services Section -->
-                    <section class="services">
-                        <h2>Services</h2>
-                        <div class="services-grid">
-                            <div class="service-item">
-                                <div class="service-image">
-                                    <span>IMAGE</span>
-                                </div>
-                                <h3>Saving A/C</h3>
-                                <p>High-yield savings accounts with competitive interest rates and no hidden fees.</p>
-                            </div>
-                            
-                            <div class="service-item">
-                                <div class="service-image">
-                                    <span>IMAGE</span>
-                                </div>
-                                <h3>Fixed Deposit</h3>
-                                <p>Secure your future with our fixed deposit schemes offering attractive returns.</p>
-                            </div>
-                            
-                            <div class="service-item">
-                                <div class="service-image">
-                                    <span>IMAGE</span>
-                                </div>
-                                <h3>Credit Cards</h3>
-                                <p>Enjoy cashback rewards, travel benefits, and exclusive offers with our credit cards.</p>
-                            </div>
-                            
-                            <div class="service-item">
-                                <div class="service-image">
-                                    <span>IMAGE</span>
-                                </div>
-                                <h3>Loan</h3>
-                                <p>Personal, home, and business loans at competitive rates with flexible repayment options.</p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- Login Content (Hidden by default) -->
-                <div id="loginContent" class="hidden">
-                    <div class="form">
-                        <form action="login.php" method="post">
-                            <fieldset>
-                                <legend class="title">Login</legend><br>
-                                <label for="loginUsername">Username</label>
-                                <input type="text" name="Username" id="loginUsername" required="required"><br><br>
-                                <label for="loginPassword">Password</label>
-                                <input type="password" name="password" id="loginPassword" required="required"> <br><br>
-                                <button type="submit" class="submit">Login Now</button>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
+    <main class="container">
+        <section class="hero">
+            <h2>Welcome to IndianBank</h2>
+            <p>This site is under construction</p>
+            <div class="cta">
+                <a class="btn" href="dashboard.php">Open Dashboard</a>
+                <a class="btn secondary" href="#login">Login</a>
+                <a class="btn secondary" href="signup.php">Sign Up</a>
             </div>
+        </section>
 
-            <!-- Scrolling News Section using Marquee -->
-            <aside class="content-right">
-                <div class="news-section">
-                    <h3>Scrolling News</h3>
-                    <div class="news-marquee">
-                        <marquee direction="up" scrollamount="2" height="200">
-                            <p><strong>Latest Update:</strong> New mobile banking app launched with enhanced security features.</p>
-                            <br>
-                            <p><strong>Interest Rate Alert:</strong> Fixed deposit rates increased to 7.5% for senior citizens.</p>
-                            <br>
-                            <p><strong>Branch News:</strong> New branch opening in downtown area next month.</p>
-                            <br>
-                            <p><strong>Digital Banking:</strong> UPI transactions now available 24/7 with zero charges.</p>
-                            <br>
-                            <p><strong>Customer Service:</strong> Extended support hours - now available till 10 PM.</p>
-                            <br>
-                            <p><strong>Security Alert:</strong> New fraud detection system implemented for better account protection.</p>
-                        </marquee>
-                    </div>
-                </div>
-            </aside>
-        </main>
+        <section id="login" class="card">
+            <h3>Login</h3>
+            <div id="msg" class="muted" style="margin-bottom:8px;"></div>
+            <form method="post" action="login.php" class="form-grid">
+                <label>Username
+                    <input type="text" name="username" required>
+                </label>
+                <label>Password
+                    <input type="password" name="password" required>
+                </label>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            
+        </section>
+    </main>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-date">
-                <span>© 2025 IndianBank. All rights reserved.</span>
-                <span class="date">8/19/2025</span>
-            </div>
-        </footer>
-    </div>
-
+    <footer class="site-footer">
+        <p>© <span id="year"></span> IndianBank Demo</p>
+    </footer>
     <script>
-        function showLogin() {
-            document.getElementById('homeContent').classList.add('hidden');
-            document.getElementById('loginContent').classList.remove('hidden');
-        }
-
-        function showHome() {
-            document.getElementById('loginContent').classList.add('hidden');
-            document.getElementById('homeContent').classList.remove('hidden');
-        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const params = new URLSearchParams(location.search);
+        const m = params.get('msg');
+        const msg = document.getElementById('msg');
+        if(m==='login-required'){ msg.textContent = 'Please login to continue.'; }
+        else if(m==='failed'){ msg.textContent = 'Invalid username or password.'; }
+        else if(m==='missing'){ msg.textContent = 'Enter username and password.'; }
+        else if(m==='signup-ok'){ msg.textContent = 'Signup successful. You can login now.'; }
     </script>
 </body>
 </html>
+
+
